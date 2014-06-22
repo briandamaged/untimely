@@ -35,7 +35,7 @@ class TimeMeasurement(object):
 
   @property
   def has_completed(self):
-    return self.start_time and self.stop_time
+    return self.has_started and self.has_stopped
 
   @property
   def length(self):
